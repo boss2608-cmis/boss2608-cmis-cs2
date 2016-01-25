@@ -1,0 +1,8 @@
+Boss
+gedit ______(file name)
+git add
+git commit -m "_(comment)_"
+git push
+cd/cd ..
+ls = list
+python -m SimpleHTTPServer
