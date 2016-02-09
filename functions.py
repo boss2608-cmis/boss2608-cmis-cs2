@@ -1,10 +1,20 @@
-def Life():
-	print "Life"
-
-Life()
-
-def cat_has(thing1, thing2):
-	print "the cat has" + thing1 
-	print "the cat also has" + thing2
-cat_has("catnip", "food")
-
+def add(a, b):
+	return a+b
+x=add(3, 4)
+print x
+#
+def sub(a, b):
+	return a-b
+y=sub(5, 3)
+print y
+#
+def mul(a, b):
+	return a*b
+w=mul(4, 4)
+print w
+#
+def div(a, b):
+	return a/b
+	return float
+z=div(2, 3)
+print z
