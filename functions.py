@@ -25,9 +25,11 @@ def hours(a, b, c):
 H=hours(86400, 60, 60)
 print H
 # this turns a into hours
-def area(a,b):
-	return math.pi* a **b
-
-print area(5,2)
-
+def area(a):
+	return math.pi* a **2
+print area(5)
+# this calculates the area of a circle
+def volume(a):
+	return (((4/3.0)*math.pi)*a**3)
+print volume(5)
 
