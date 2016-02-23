@@ -95,11 +95,14 @@ print w
 print x
 #A function that aligns hello to center of python
 
-def msgbox(a):
+def msg_box(a):
     return "+" + (len(a) + 4) * "-" + "+\n" "|" + "  " + a + "  " + "|\n" "+" + (len(a) + 4) * "-" + "+"
-
-a = msgbox("Hello")
-b = msgbox("I eat cats!")
+a = msg_box("Hello")
+b = msg_box("I eat cats!")
 print a
 print b
+#A funtion that puts a message into a box
 
+print msgbox(str(x))
+print msgbox(str(a))
+print msgbox(str(a))
