@@ -89,8 +89,8 @@ print p
 
 def center(a):
 	return (a.center(40))
-w = center("Hello")
-x = center("Bye")
+w1 = center("Hello")
+x1 = center("Bye")
 print w
 print x
 #A function that aligns hello to center of python
@@ -104,5 +104,23 @@ print b
 #A funtion that puts a message into a box
 
 print msgbox(str(x))
+print msgbox(str(e))
+print msgbox(str(y))
+print msgbox(str(f))
+print msgbox(str(w))
+print msgbox(str(c))
+print msgbox(str(z))
+print msgbox(str(i))
+print msgbox(str(h))
+print msgbox(str(q))
+print msgbox(str(s))
+print msgbox(str(d))
 print msgbox(str(a))
-print msgbox(str(a))
+print msgbox(str(b))
+print msgbox(str(j))
+print msgbox(str(k))
+print msgbox(str(g))
+print msgbox(str(p))
+print msgbox(str(w1))
+print msgbox(str(x1))
+# This prints all the funtions into a message box
