@@ -1,13 +1,16 @@
-def add(x, y):
-	z = x + y
-	return z
+import math
+def area(r1, r2, r3):
+	A1 = ((4*math.pi)r1**2)
+	A2 = ((4*math.pi)r2**2)
+	A3 = ((4*math.pi)r3**2)
+	Avg = (A1+A2+A3)/3
 
-def output(name, x, y, z):
+def output(name):
 	return """
 Hello there, {}!
-Did you know:
-{} + {} = {} 
-""".format(name, x, y, z)
+The average area of these three spheres is:
+{} 
+""".format(name)
 
 def main():
 	name = raw_input("Name: ")
@@ -15,5 +18,4 @@ def main():
 	y = raw_input("2nd number: ")
 	z = add(int(x), int(y))
 	print output(name, x, y, z)
-
 main()
