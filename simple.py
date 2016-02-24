@@ -1,21 +1,27 @@
 import math
-def area(r1, r2, r3):
-	A1 = ((4*math.pi)r1**2)
-	A2 = ((4*math.pi)r2**2)
-	A3 = ((4*math.pi)r3**2)
+def area(a, b, c):
+	A1 = ((4*math.pi)*a**2)
+	A2 = ((4*math.pi)*b**2)
+	A3 = ((4*math.pi)*c**2)
 	Avg = (A1+A2+A3)/3
+	return Avg
 
-def output(name):
+def output(a, b ,c , d, e):
 	return """
 Hello there, {}!
-The average area of these three spheres is:
-{} 
-""".format(name)
+equation: ((4*math.pi)*{}**2)((4*math.pi)*{}**2)((4*math.pi)*{}**2)
+Calculating average area of three spheres...
+
+the answer is: {} 
+""".format(a, b, c, d, e)
 
 def main():
-	name = raw_input("Name: ")
-	x = raw_input("1st number: ")
-	y = raw_input("2nd number: ")
-	z = add(int(x), int(y))
-	print output(name, x, y, z)
+	a = raw_input("Name: ")
+	b = raw_input("1st number: ")
+	c = raw_input("2nd number: ")
+	d = raw_input("3rd number: ")
+	e = area(int(b), int(c), int(d))
+	print output(a, b, c, d, e)
 main()
+
+
