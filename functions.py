@@ -25,19 +25,18 @@ print c
 # this multiplies a and b
 
 def div(a, b):
-	return a/b
-	return float
+	return float(a)/float(b)
 z = div(2.0, 3)
-i = div(9, 3)
+i = div(8, 3)
 print z
 print i
 # this divides a and b
 
 def hours(a, b, c):
 	return a/b/c
-H = hours(86400, 60, 60)
+h = hours(86400, 60, 60)
 q = hours(3600, 60, 60)
-print H
+print h
 print q
 # this turns a into hours
 def Areacircle(r):
@@ -62,8 +61,8 @@ def averagevolume(a,b):
 	pi = (math.pi)
 	d1 = a/2
 	d2 = b/2
-	Vol1 = (((4/3.0)*pi)*d1**3)
-	Vol2 = (((4/3.0)*pi)*d2**3)
+	Vol1 = Volumesphere(d1)
+	Vol2 = Volumesphere(d2)
 	return (Vol1 + Vol2)/2
 j = averagevolume(10, 20)
 k = averagevolume(18, 80)
@@ -95,12 +94,12 @@ print w
 print x
 #A function that aligns hello to center of python
 
-def msg_box(a):
+def msgbox(a):
     return "+" + (len(a) + 4) * "-" + "+\n" "|" + "  " + a + "  " + "|\n" "+" + (len(a) + 4) * "-" + "+"
-a = msg_box("Hello")
-b = msg_box("I eat cats!")
-print a
-print b
+a1 = msgbox("Hello")
+b1 = msgbox("I eat cats!")
+print a1
+print b1
 #A funtion that puts a message into a box
 
 print msgbox(str(x))
@@ -121,6 +120,4 @@ print msgbox(str(j))
 print msgbox(str(k))
 print msgbox(str(g))
 print msgbox(str(p))
-print msgbox(str(w1))
-print msgbox(str(x1))
 # This prints all the funtions into a message box
