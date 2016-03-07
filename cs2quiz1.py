@@ -43,7 +43,11 @@
 #TOTALS  ...
 
 # Hint: Radius is the square root of the area divided by pi
-
+1
+2
+0
+1
+1
 import math
 def area(a, b, c):
 	pi = math.pi
@@ -55,7 +59,11 @@ def area(a, b, c):
 	return D2
 	return D3
 	return Total
-
+1
+1
+1
+1
+3
 def output(a, b ,c , d):
 	return """
 Circlepython  Diameter
@@ -64,6 +72,11 @@ c2: {}
 c3: {}
 Totals: {}
 """.format(a, b, c, d)
+1
+0
+0
+1
+1
 
 def main():
 	a = raw_input("Area of C1: ")
