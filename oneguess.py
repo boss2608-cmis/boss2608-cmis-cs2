@@ -1,14 +1,6 @@
 import random
-def numberRange(number1,number2):
-    return random.randint(number1,number2)
-
-def PlayerResult(result,PlayersGuess):
-    if result > PlayersGuess:
-        sub = abs(PlayersGuess - result)
-        return "That is over by {}".format(sub)
-    else:
-        add = abs(PlayersGuess + result)
-        return "That is under by {}".format(add)
+def numberRange(minino, maxino):
+    return random.randint(minino, maxino)
 
 def output(result, PlayersGuess, wrong):
     if result == PlayersGuess:
@@ -20,13 +12,20 @@ That's correct! You must be a psychic!""".format(result, PlayersGuess)
 Your guess was {}
 {}""".format(result, PlayersGuess, wrong)
 
+def PlayerResult(result, PlayersGuess):
+    if result > PlayersGuess:
+        sub = abs(PlayersGuess - result)
+        return "That is under by {}".format(sub)
+    else:
+        add = abs(PlayersGuess - result)
+        return "That is over by {}".format(add)
 
 def main():
-    number1 = int(raw_input("What is the minimum number?"))
-    number2 = int(raw_input("What is the maximum number?"))
-    print "Im thinking of a number from {} to {}".format(number1, number2)
-    PlayersGuess = int(raw_input("What do you think it is?:"))
-    result = int(numberRange(number1, number2))
+    minino = int(raw_input("What is the minimum number? "))
+    maxino = int(raw_input("What is the maximum number? "))
+    print "Im thinking of a number from {} to {}".format(minino, maxino)
+    PlayersGuess = int(raw_input("What do you think it is?: "))
+    result = int(numberRange(minino, maxino))
     wrong = PlayerResult(result, PlayersGuess)
     return output(result, PlayersGuess, wrong)
 
