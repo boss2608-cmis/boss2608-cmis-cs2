@@ -16,12 +16,12 @@ the answer is: {}
 """.format(a, b, c, d, e)
 
 def main():
-	a = raw_input("Name: ")
-	b = raw_input("1st number: ")
-	c = raw_input("2nd number: ")
-	d = raw_input("3rd number: ")
-	e = area(int(b), int(c), int(d))
-	print output(a, b, c, d, e)
+	Name = raw_input("Name: ")
+	Area1 = raw_input("Area of 1st sphere: ")
+	Area2 = raw_input("Area of 2nd sphere: ")
+	Area3 = raw_input("Area of 3rd sphere: ")
+	e = area(int(Area1), float(Area2), float(Area3))
+	print output(Name, Area1, Area2, Area3, e)
 main()
 
 
