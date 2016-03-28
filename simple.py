@@ -20,7 +20,7 @@ def main():
 	Area1 = raw_input("Area of 1st sphere: ")
 	Area2 = raw_input("Area of 2nd sphere: ")
 	Area3 = raw_input("Area of 3rd sphere: ")
-	e = area(int(Area1), float(Area2), float(Area3))
+	e = area(int(Area1), int(Area2), int(Area3))
 	print output(Name, Area1, Area2, Area3, e)
 main()
 
