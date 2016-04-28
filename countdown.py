@@ -12,19 +12,23 @@
 #	countdown(start, stop)
 #main()
 
-def adder():
-
-	n0 = float(raw_input("next number: "))
-	if n0 != "":
-		running_total(total)
+def adder(running_total = 0):
+	print "The running total is {}".format(running_total)
+	n0 = raw_input("next number: ")
+	if n0 == "":
+		print "The sum is {}".format(running_total)
 	else:
-		adder()
+		running_total += float(n0)
+
+		adder(running_total)
 adder()
 
-def running_total(total):
-	total = n0
-	total + n0
-	print total
+def Bigger():
+	n0 = raw_input("Next: ")
+	
+		Bigger()
+Bigger()
+
 
 
 
