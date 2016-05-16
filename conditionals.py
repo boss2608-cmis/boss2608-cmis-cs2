@@ -1,9 +1,8 @@
 #This text based game will be a maze type game where you have to find your way out of the forest without getting more lost or attacked by wild animals.
 
 import random
-
+ 
 def storypart4():
-	answer5 = raw_input("do you turn left, right, or straight: ")
 	if answer5 == "left":
 		print "you meet a dead end and have to turn back"
 		answer6 = raw_input("do you turn left or straight: ")
@@ -35,7 +34,7 @@ def storypart2():
 		print "you put up a good figh but get knocked over the head, hit a rock, and die..."
 	elif answer3 == "hide":
 		print "the bear sniffs you out, you try to run but it is too late, it catches you and with one swipe of its paw... it kiils you..."
-	elif answer3 == "run":
+	else:
 		print "you manage to run long enough to lose the bear, but you are further away from civilzation than you were before"
 		print "you look around but everything looks the same, you hear a sound so you turn around to see a bush shaking, what do you do..."
 	return storypart3()
@@ -44,16 +43,16 @@ def main():
 	print "you have been stuck in a forest for a certan amount of days"
 	answer1 = int(raw_input("How many days have you been in the forest: "))
 	answer2 = raw_input("do you have any survival skills? ") 
-	print "ok, you have been stuck in the forest for {} days...".format(answer1)
+	print "you have a {} percent chance of living... but you need to make the right choices...".format(random.random())
 	if answer1 > int(365) and answer2 == "yes":
 		print "you survive long enough to make it out alive, but this experience will haunt you forever..."
-	elif answer1 > int(365) and answer2 != "yes":
+	elif answer1 > int(365) and answer1 > int(0) and answer2 != "yes":
 		print "you must've been lucky, but your luck is over. You accidentally eat a poisonous berry and die."
 	elif answer1 <= int(0) and answer2 == "yes" or answer2 == "no":
 		print "good job, you're not lost, now go home before you are"
-	elif answer1 < int(365) and answer2 != "yes":
+	elif answer1 < int(365) and answer1 > int(0) and answer2 != "yes":
 		print "you dont last long in the forest and die of starvation"
-	elif answer1 < int(365) and answer2 == "yes":
+	elif answer1 <= int(365) and answer1 > int(0) and answer2 == "yes":
 		print "you are most likey to find your way out soon, but you are far from civilization, you are suddenly chased by a bear"
 	return storypart2()
 
