@@ -1,9 +1,9 @@
-#Section 1: Terminology
+#Section 1: Terminology +1
 # 1) What is a recursive function?
 #A function that calls itself
 #
 #
-# 2) What happens if there is no base case defined in a recursive function?
+# 2) What happens if there is no base case defined in a recursive function? +1
 #it will keep calling itself until it has reached a maximum about of times that it can call itself
 #
 #
@@ -11,11 +11,11 @@
 # The base case and recursion case
 #
 #
-# 4) How do we put data into a function call?
+# 4) How do we put data into a function call? +1
 # raw input
 #
 # 
-# 5) How do we get data out of a function call?
+# 5) How do we get data out of a function call? +1
 # return
 #
 #
@@ -23,19 +23,19 @@
 #Section 2: Reading
 # Read the following function definitions and function calls.
 # Then determine the values of the variables q1-q20.
-
+#+3
 #a1 = 8
 #a2 = 8
 #a3 = -1
-
+#+3
 #b1 = 2
 #b2 = 0
 #b3 = 0
-
+#+1
 #c1 = 1
 #c2 = 4
 #c3 = 55
-
+#+2
 #d1 = 6
 #d2 = 8
 #d3 = 5
@@ -49,10 +49,11 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 
 def input():
+# +2
 	question = raw_input("Next: ")
 	if question != "":
 		input()
-#base case
+#base case +2
 	else:
 		add = question + question
 		print "the total was {}".format(add)
