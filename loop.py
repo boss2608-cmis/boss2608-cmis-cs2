@@ -61,7 +61,7 @@ def grid2(w, h):
 	while x < w:
 		out += "."
 		x += 1
-	while x < h:
+		while y < h:
 		out += "."
 		x += 1
 	print x
